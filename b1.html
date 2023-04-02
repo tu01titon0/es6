@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    Nhap do C: <input type="mumber" name="a" id="a" placeholder="nhap do c">
+    <input type="submit" name="submit" onclick="checkResult()">
+</body>
+<script>
+    const arr1 = ["a","b","c","d"];
+    const arr2 = [...arr1];
+
+    const arr3 = [...arr1,"e","f"];
+
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr3);
+
+
+    const cars4 = ["g","h","j","k"];
+    const cars5 = ["l","m"];
+    const cars6 = [...cars4, ...cars5];
+    console.log(cars6);
+
+
+    const cars1 = {
+        Brand : "BMW",
+        Color : "RED"
+    }
+    const cars2 = {...cars1};
+    console.log(cars2);
+
+
+    const ab = {
+        Brand : "Toyota",
+        Color : "RED"
+    }
+    const bc = {
+        Brand : "Nissan",
+        Color : "BLUE",
+        Year : 2004
+    }
+    const df = {...ab,...bc};
+    console.log(df);
+
+
+    const car = "AUDI";
+    const a = [...car];
+    console.log(a);
+
+
+    const numbers = [3,5,7,8,9];
+    const [a1,b1,c1,...others] = numbers;
+    console.log(a1);
+    console.log(b1);
+    console.log(c1);
+    console.log(others);
+
+</script>
+</htmL> 
